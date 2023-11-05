@@ -1,0 +1,28 @@
+body{
+	background-image: url("../images/sea.jpg");
+	background-color: #65B8DB;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+img{
+	position: absolute;
+	top: 140px;
+	width: 500px;
+}
+.sun{
+	position: absolute;
+	width: 100px;
+	top: 80px;
+	left: 500px;
+	animation: sun 4s linear;
+	animation-iteration-count: 1;
+	animation-direction: left;
+}
+
+@keyframes sun {
+	from {top: 80px;}
+	to {top: 200px;}
+
+}
