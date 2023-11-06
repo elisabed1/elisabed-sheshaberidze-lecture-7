@@ -14,15 +14,55 @@ img{
 .sun{
 	position: absolute;
 	width: 100px;
-	top: 80px;
-	left: 500px;
-	animation: sun 4s linear;
-	animation-iteration-count: 1;
-	animation-direction: left;
+	top: 400px;
+	left: 1300px;
+	animation: sun 10s infinite;
+
 }
 
 @keyframes sun {
-	from {top: 80px;}
-	to {top: 200px;}
+	from {top: 400px;}
+	to {top: 100px; left: 500px}
 
+}
+.banana{
+	width: 50px;
+	top: 280px;
+	left: 155px;
+	rotate: 30deg;
+}
+.banana:hover {
+	width: 120px;
+	top: 280px;
+	left: 155px;
+	rotate: 30deg;
+	animation: banana 3s infinite;
+}
+.bird{
+	top: 200px;
+	width: 80px;
+	animation: bird 3s infinite;
+	position: relative;
+}
+.bird1{
+	width: 50px;
+	top: 200px;
+	animation: bird 3s infinite;
+	position: relative;
+}
+@keyframes bird{
+		from {top: 200px;}
+		to {top: 200px; left: 1000px;}
+}
+@keyframes bird1{
+		from {top: 200px;}
+		to {top: 200px; left: 1000px;}
+}
+.mon{
+	width: 90px;
+	top: 500px;
+	left: 200px;
+}
+.mon:hover{
+	width: 110px;
 }
